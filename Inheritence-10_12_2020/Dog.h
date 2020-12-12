@@ -18,6 +18,6 @@ public:
     }
     // override
     void speak() {
-        cout << "Bark! Bark! Bark!" << endl;
+        cout << "Woof! Woof! Woof!" << endl;
     }
 };
