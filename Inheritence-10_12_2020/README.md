@@ -55,7 +55,7 @@ Name: Animal
 This is an Animal!
 This is a Dog!
 The Dog is running.
-Bark! Bark! Bark!
+Woof! Woof! Woof!
 Eating... - Animal
 Type: Animal
 Name: Spike
