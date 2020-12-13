@@ -5,7 +5,7 @@ class Silindir
 {
 public:
 	friend void operator>>(istream& in, Silindir& silindir);
-	// ostream& operator<<(ostream& out, Silindir silindir) {
+	// ostream& operator<<(ostream& out, Silindir silindir);
 
 	Silindir() : id(++counter) {
 	};
@@ -21,11 +21,12 @@ public:
 		double silindirHacmi = PI * yaricap * yaricap * yukseklik;
 		return (silindirHacmi >= hacim);
 	}
-
+	// Postfix ++ (silindir++)
 	Silindir operator++(int) {
 		yukseklik++;
 		return *this;
 	}
+	// Prefix ++ (++silindir)
 	Silindir operator++() {
 		yukseklik++;
 		return *this;
