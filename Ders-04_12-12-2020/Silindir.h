@@ -21,15 +21,17 @@ public:
 		double silindirHacmi = PI * yaricap * yaricap * yukseklik;
 		return (silindirHacmi >= hacim);
 	}
-	// Postfix ++ (silindir++)
-	Silindir operator++(int) {
-		yukseklik++;
-		return *this;
-	}
 	// Prefix ++ (++silindir)
 	Silindir operator++() {
 		yukseklik++;
 		return *this;
+	}
+	// Postfix ++ (silindir++)
+	Silindir operator++(int) {
+		Silindir temp = *this;
+   		++*this;
+		// temp.yukseklik++;
+   		return temp;
 	}
 	Silindir operator+=(float temp) {
 		yukseklik += temp;
